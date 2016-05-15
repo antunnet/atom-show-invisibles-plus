@@ -1,0 +1,35 @@
+{
+	"scopeName": "invisibles",
+	"name": "Show invisibles plus",
+	"injectionSelector": "*",
+	"patterns": [
+		{
+			"match": "[\u200b\ufeff]",
+			"name": "invisibles-plus.zero-width-space"
+		},
+		{
+			"match": "[\u00a0\u202f\u2007\ufeff]",
+			"name": "invisibles-plus.no-break-space"
+		},
+		{
+			"match": "[\u2000-\u200a\u180e\u205f]",
+			"name": "invisibles-plus.width-space"
+		},
+		{
+			"match": "\u3000",
+			"name": "invisibles-plus.ideographic-space"
+		},
+		{
+			"match": "[\\x00\u0001-\u0008\u000b-\u000c\u000e-\u001f\u007f\u0080-\u009f]",
+			"name": "invisibles-plus.control-character"
+		},
+		{
+			"match": "[\u200b-\u200f\u2028-\u202f\u2060\u034f]",
+			"name": "invisibles-plus.format-character"
+		},
+		{
+			"match": "[\u2061-\u2064]",
+			"name": "invisibles-plus.invisible-operator"
+		}
+	]
+}

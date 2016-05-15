@@ -1,0 +1,52 @@
+@import "ui-variables";
+@import "syntax-variables";
+
+atom-text-editor::shadow {
+	.invisibles-plus {
+		position: relative;
+		border: 1px none @syntax-invisible-character-color;
+		
+		&::before {
+			color: @syntax-invisible-character-color;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			text-align: center;
+			overflow-x: hidden;
+		}
+		
+		&.ideographic-space::before {
+			content: '□';
+		}
+		&.no-break-space::before {
+			content: '~';		// ⍽
+		}
+		&.zero-width-space {
+			border-style: solid;
+		}
+		&.width-space {
+			border-style: solid;
+		}
+		&.control-character {
+			border-style: solid;
+			border-color: @text-color-error;
+		}
+/*
+		&.control-character::before {
+			position: relative;;
+			content: "␈";
+			␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏
+			␐␑␒␓␔␕␖␗␘␙␚␛␜␝␞␟
+			␡
+		}
+*/
+		&.format-character {
+			border-style: solid;
+			border-color: @text-color-warning;
+		}
+		&.invisible-operator {
+			border-style: solid;
+			border-color: @text-color-warning;
+		}
+	}
+}
