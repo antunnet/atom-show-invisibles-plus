@@ -1,5 +1,5 @@
 {
-	"scopeName": "invisibles",
+	"scopeName": "invisibles-plus",
 	"name": "Show invisibles plus",
 	"injectionSelector": "*",
 	"patterns": [
