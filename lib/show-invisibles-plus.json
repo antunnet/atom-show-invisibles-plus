@@ -4,7 +4,7 @@
 	"injectionSelector": "*",
 	"patterns": [
 		{
-			"match": "[\u200b\ufeff]",
+			"match": "[\u00ad\u200b\ufeff]",
 			"name": "invisibles-plus.zero-width-space"
 		},
 		{

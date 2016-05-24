@@ -1,3 +1,7 @@
+## 0.3.0 - 2016/5/24
+* Supports soft hyphen as zero width space.
+* Hide internal grammar from grammar selector.
+
 ## 0.2.0 - 2016/5/17
 * Performance improvements at package loading and activation.
 

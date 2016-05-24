@@ -15,10 +15,10 @@ U+2060 word joiner (HTML: &#8288; WJ)（単語結合子） - Unicode 3.2から�
 
 [Whitespace]
 
-	U+0009	CHARACTER TABULATION, 水平タブ
+	U+0009	CHARACTER TABULATION, 水平タブ \t
 	U+000A	LF \n
-	U+000B	line tabulation VT, Vertical Tab
-	U+000C	form feed
+	U+000B	line tabulation VT, Vertical Tab \v
+	U+000C	form feed \f
 	U+000D	CR \r
  	U+0020	SPACE, 1/4em
 	U+0085	next line, NEL
@@ -72,7 +72,8 @@ U+200C, U+200D もこの分類
 
 [?]
 
-͏	U+034F	結合書記素接合子 COMBINING GRAPHEME JOINER
+͏	U+034F	COMBINING GRAPHEME JOINER, 結合書記素接合子
+­	U+00AD	Soft Hyphen, &shy;, ソフトハイフン
 
 U+FFA0  HALFWIDTH HANGUL FILLER
 U+3164  HANGUL FILLER
