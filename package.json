@@ -12,7 +12,7 @@
   "repository": "https://github.com/antunnet/atom-show-invisibles-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.7.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0"
   },
   "dependencies": {}
 }

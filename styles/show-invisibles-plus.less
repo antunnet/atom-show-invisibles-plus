@@ -1,8 +1,8 @@
 @import "ui-variables";
 @import "syntax-variables";
 
-atom-text-editor::shadow {
-	.invisibles-plus {
+atom-text-editor.editor {
+	.syntax--invisibles-plus {
 		position: relative;
 		border: 1px none @syntax-invisible-character-color;
 		
@@ -15,24 +15,24 @@ atom-text-editor::shadow {
 			overflow-x: hidden;
 		}
 		
-		&.ideographic-space::before {
+		&.syntax--ideographic-space::before {
 			content: '□';
 		}
-		&.no-break-space::before {
+		&.syntax--no-break-space::before {
 			content: '~';		// ⍽
 		}
-		&.zero-width-space {
+		&.syntax--zero-width-space {
 			border-style: solid;
 		}
-		&.width-space {
+		&.syntax--width-space {
 			border-style: solid;
 		}
-		&.control-character {
+		&.syntax--control-character {
 			border-style: solid;
 			border-color: @text-color-error;
 		}
 /*
-		&.control-character::before {
+		&.syntax--control-character::before {
 			position: relative;;
 			content: "␈";
 			␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏
@@ -40,11 +40,11 @@ atom-text-editor::shadow {
 			␡
 		}
 */
-		&.format-character {
+		&.syntax--format-character {
 			border-style: solid;
 			border-color: @text-color-warning;
 		}
-		&.invisible-operator {
+		&.syntax--invisible-operator {
 			border-style: solid;
 			border-color: @text-color-warning;
 		}
