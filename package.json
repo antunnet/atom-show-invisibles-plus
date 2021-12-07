@@ -1,7 +1,7 @@
 {
   "name": "show-invisibles-plus",
   "main": "./lib/show-invisibles-plus",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "More show invisibles.",
   "keywords": [
     "ideographic-space",
