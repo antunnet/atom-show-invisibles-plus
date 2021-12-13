@@ -13,6 +13,9 @@ atom-text-editor.editor {
 			right: 0px;
 			text-align: center;
 			overflow-x: hidden;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
 		}
 		
 		&.syntax--ideographic-space::before {
@@ -31,15 +34,100 @@ atom-text-editor.editor {
 			border-style: solid;
 			border-color: @text-color-error;
 		}
-/*
 		&.syntax--control-character::before {
-			position: relative;;
-			content: "␈";
-			␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏
-			␐␑␒␓␔␕␖␗␘␙␚␛␜␝␞␟
-			␡
+			color: white;
+			background-color: @background-color-error;
 		}
-*/
+		&.syntax--control-character-nul::before {
+			content: "␀";
+		}
+		&.syntax--control-character-soh::before {
+			content: "␁";
+		}
+		&.syntax--control-character-stx::before {
+			content: "␂";
+		}
+		&.syntax--control-character-etx::before {
+			content: "␃";
+		}
+		&.syntax--control-character-eot::before {
+			content: "␄";
+		}
+		&.syntax--control-character-enq::before {
+			content: "␅";
+		}
+		&.syntax--control-character-ack::before {
+			content: "␆";
+		}
+		&.syntax--control-character-bel::before {
+			content: "␇";
+		}
+		&.syntax--control-character-bs::before {
+			content: "␈";
+		}
+		&.syntax--control-character-vt::before {
+			content: "␋";
+		}
+		&.syntax--control-character-ff::before {
+			content: "␌";
+		}
+		&.syntax--control-character-so::before {
+			content: "␎";
+		}
+		&.syntax--control-character-si::before {
+			content: "␏";
+		}
+		&.syntax--control-character-dle::before {
+			content: "␐";
+		}
+		&.syntax--control-character-dc1::before {
+			content: "␑";
+		}
+		&.syntax--control-character-dc2::before {
+			content: "␒";
+		}
+		&.syntax--control-character-dc3::before {
+			content: "␓";
+		}
+		&.syntax--control-character-dc4::before {
+			content: "␔";
+		}
+		&.syntax--control-character-nak::before {
+			content: "␕";
+		}
+		&.syntax--control-character-syn::before {
+			content: "␖";
+		}
+		&.syntax--control-character-etb::before {
+			content: "␗";
+		}
+		&.syntax--control-character-can::before {
+			content: "␘";
+		}
+		&.syntax--control-character-em::before {
+			content: "␙";
+		}
+		&.syntax--control-character-sub::before {
+			content: "␚";
+		}
+		&.syntax--control-character-esc::before {
+			content: "␛";
+		}
+		&.syntax--control-character-fs::before {
+			content: "␜";
+		}
+		&.syntax--control-character-gs::before {
+			content: "␝";
+		}
+		&.syntax--control-character-rs::before {
+			content: "␞";
+		}
+		&.syntax--control-character-us::before {
+			content: "␟";
+		}
+		&.syntax--control-character-del::before {
+			content: "␡";
+		}
 		&.syntax--format-character {
 			border-style: solid;
 			border-color: @text-color-warning;
@@ -47,6 +135,32 @@ atom-text-editor.editor {
 		&.syntax--invisible-operator {
 			border-style: solid;
 			border-color: @text-color-warning;
+		}
+	}
+}
+atom-text-editor.editor[data-show-invisible="selection cursor-line"] {
+	.line:not(.cursor-line) .invisible-character,
+	.line:not(.cursor-line) .syntax--invisibles-plus {
+		color: @syntax-background-color;
+		
+		&::before {
+			color: @syntax-background-color;
+			background-color: unset;
+		}
+		
+		/* TextEditorのDOM実装が不可視文字と選択範囲を別レイヤーにしているため、選択範囲内の不可視文字を触るには大改造が必要 */
+	}
+}
+atom-text-editor.editor[data-show-invisible="selection"] {
+	.invisible-character {
+		color: @syntax-background-color;
+	}
+	.syntax--invisibles-plus {
+		color: @syntax-background-color;
+		
+		&::before {
+			color: @syntax-background-color;
+			background-color: unset;
 		}
 	}
 }

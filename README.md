@@ -9,6 +9,7 @@ More show invisibles.
 - Show placeholders for ideographic-space　 and nbsp .
 - Show borders for control characters, various whitespace  and zero width characters﻿.
 - Placeholders is customizable.
+- Option to show only the selected area.
 - Better performance by using grammar setting, not marker.
 
 

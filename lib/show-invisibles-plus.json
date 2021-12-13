@@ -20,11 +20,131 @@
 			"name": "invisibles-plus.ideographic-space"
 		},
 		{
+			"match": "\\x00",
+			"name": "invisibles-plus.control-character.control-character-nul"
+		},
+		{
+			"match": "\u0001",
+			"name": "invisibles-plus.control-character.control-character-soh"
+		},
+		{
+			"match": "\u0002",
+			"name": "invisibles-plus.control-character.control-character-stx"
+		},
+		{
+			"match": "\u0003",
+			"name": "invisibles-plus.control-character.control-character-etx"
+		},
+		{
+			"match": "\u0004",
+			"name": "invisibles-plus.control-character.control-character-eot"
+		},
+		{
+			"match": "\u0005",
+			"name": "invisibles-plus.control-character.control-character-enq"
+		},
+		{
+			"match": "\u0006",
+			"name": "invisibles-plus.control-character.control-character-ack"
+		},
+		{
+			"match": "\u0007",
+			"name": "invisibles-plus.control-character.control-character-bel"
+		},
+		{
+			"match": "\u0008",
+			"name": "invisibles-plus.control-character.control-character-bs"
+		},
+		{
+			"match": "\u000b",
+			"name": "invisibles-plus.control-character.control-character-vt"
+		},
+		{
+			"match": "\u000c",
+			"name": "invisibles-plus.control-character.control-character-ff"
+		},
+		{
+			"match": "\u000e",
+			"name": "invisibles-plus.control-character.control-character-so"
+		},
+		{
+			"match": "\u000f",
+			"name": "invisibles-plus.control-character.control-character-si"
+		},
+		{
+			"match": "\u0010",
+			"name": "invisibles-plus.control-character.control-character-dle"
+		},
+		{
+			"match": "\u0011",
+			"name": "invisibles-plus.control-character.control-character-dc1"
+		},
+		{
+			"match": "\u0012",
+			"name": "invisibles-plus.control-character.control-character-dc2"
+		},
+		{
+			"match": "\u0013",
+			"name": "invisibles-plus.control-character.control-character-dc3"
+		},
+		{
+			"match": "\u0014",
+			"name": "invisibles-plus.control-character.control-character-dc4"
+		},
+		{
+			"match": "\u0015",
+			"name": "invisibles-plus.control-character.control-character-nak"
+		},
+		{
+			"match": "\u0016",
+			"name": "invisibles-plus.control-character.control-character-syn"
+		},
+		{
+			"match": "\u0017",
+			"name": "invisibles-plus.control-character.control-character-etb"
+		},
+		{
+			"match": "\u0018",
+			"name": "invisibles-plus.control-character.control-character-can"
+		},
+		{
+			"match": "\u0019",
+			"name": "invisibles-plus.control-character.control-character-em"
+		},
+		{
+			"match": "\u001a",
+			"name": "invisibles-plus.control-character.control-character-sub"
+		},
+		{
+			"match": "\u001b",
+			"name": "invisibles-plus.control-character.control-character-esc"
+		},
+		{
+			"match": "\u001c",
+			"name": "invisibles-plus.control-character.control-character-fs"
+		},
+		{
+			"match": "\u001d",
+			"name": "invisibles-plus.control-character.control-character-gs"
+		},
+		{
+			"match": "\u001e",
+			"name": "invisibles-plus.control-character.control-character-rs"
+		},
+		{
+			"match": "\u001f",
+			"name": "invisibles-plus.control-character.control-character-us"
+		},
+		{
+			"match": "\u007f",
+			"name": "invisibles-plus.control-character.control-character-del"
+		},
+		{
 			"match": "[\\x00\u0001-\u0008\u000b-\u000c\u000e-\u001f\u007f\u0080-\u009f]",
 			"name": "invisibles-plus.control-character"
 		},
 		{
-			"match": "[\u200b-\u200f\u2028-\u202f\u2060\u034f]",
+			"match": "[\u200b-\u200f\u2028-\u202f\u2060\u034f\u3164\uffa0]",
 			"name": "invisibles-plus.format-character"
 		},
 		{

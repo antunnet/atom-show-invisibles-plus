@@ -1,3 +1,8 @@
+## 0.4.0 - 2021/12/13
+* New option to show only the selected area.
+* New option to set placeholders for Control characters.
+* Supports hangul filler as format character.
+
 ## 0.3.2 - 2021/12/6
 * Warning text in readme and settings: When tree-sitter is enabled (default on since Atom 1.32), the additional placeholders and borders in this package will not work. [No alternative is available yet.](https://github.com/atom/atom/issues/18196#issuecomment-432741331) Please turn off the setting 'Settings => Core => Use Tree Sitter Parsers' to use this package.
 * Fixed an issue where changes to placeholders were not reflected immediately.
