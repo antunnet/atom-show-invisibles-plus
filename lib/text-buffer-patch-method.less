@@ -1,0 +1,44 @@
+@import "ui-variables";
+@import "syntax-variables";
+
+atom-text-editor.editor {
+	.invisible-character {
+		&.zero-width-space {
+			border: 1px solid @syntax-invisible-character-color;
+		}
+		&.no-break-space {
+		}
+		&.width-space {
+			border: 1px solid @syntax-invisible-character-color;
+		}
+		&.ideographic-space {
+		}
+		&.control-character {
+			border: 1px solid @text-color-error;
+			
+			&:not(.no-placeholder) {
+				color: white;
+				background-color: @background-color-error;
+/*				background-color: @text-color-error;	*/
+			}
+		}
+		&.format-character {
+			border: 1px solid @text-color-warning;
+		}
+		&.invisible-operator {
+			border: 1px solid @text-color-warning;
+		}
+	}
+}
+atom-text-editor.editor[data-show-invisible="selection cursor-line"] {
+	.line:not(.cursor-line) .invisible-character {
+		color: @syntax-background-color;
+		
+		/* TextEditorのDOM実装が不可視文字と選択範囲を別レイヤーにしているため、選択範囲内の不可視文字を触るには大改造が必要 */
+	}
+}
+atom-text-editor.editor[data-show-invisible="selection"] {
+	.invisible-character {
+		color: @syntax-background-color;
+	}
+}

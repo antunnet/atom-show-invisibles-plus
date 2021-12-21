@@ -144,7 +144,7 @@
 			"name": "invisibles-plus.control-character"
 		},
 		{
-			"match": "[\u200b-\u200f\u2028-\u202f\u2060\u034f\u3164\uffa0]",
+			"match": "[\u200b-\u200f\u2028-\u202e\u2060\u034f\u3164\uffa0]",
 			"name": "invisibles-plus.format-character"
 		},
 		{

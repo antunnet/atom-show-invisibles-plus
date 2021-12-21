@@ -1,6 +1,11 @@
+## 0.5.0 - 2021/12/21
+* New implementation by patching text-buffer, when tree-sitter is enabled.
+* New option to set placeholders for Cr+Eol(CRLF).
+* Exclude NARROW NO-BREAK SPACE from format-character.
+
 ## 0.4.0 - 2021/12/13
 * New option to show only the selected area.
-* New option to set placeholders for Control characters.
+* New option to set placeholders for control characters.
 * Supports hangul filler as format character.
 
 ## 0.3.2 - 2021/12/6
