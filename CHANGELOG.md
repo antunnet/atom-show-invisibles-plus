@@ -1,3 +1,8 @@
+## 0.5.1 - 2021/12/22
+* Optimize of startup time.
+* Remove invisible characters sample from README.
+* Fixed an issue where border disable was not reflected at startup.
+
 ## 0.5.0 - 2021/12/21
 * New implementation by patching text-buffer, when tree-sitter is enabled.
 * New option to set placeholders for Cr+Eol(CRLF).
